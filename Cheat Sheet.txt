@@ -1,6 +1,10 @@
 madhurjyams13
 Myn********l@5
 
+--- Repos - 
+1. https://github.com/Madhurjyams13/Madhurjya_query.git
+2. https://github.com/Madhurjyams13/Papari_query.git
+
 >>>>>>>>>>>>>> Git installation and Initial Setup >>>>>>>>>>>>>>>>>>
 >> Download Git from Website (Already available in this PC)
 >> Install by double Clicking -
