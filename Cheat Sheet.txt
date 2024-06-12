@@ -9,7 +9,7 @@ Myn********l@5
 >> to verify - in the Desktop git bash -> type git --version
 >> git config --global user.name "your user name goes here"
 >> git config --global user.emil "your email id goes here"
->> git config --global core.autocrlf <auto for windows and input for macos> <sometimes true or false> 
+>> git config --global core.autocrlf true <auto for windows and input for macos> <sometimes true or false> 
 >> git config (for default editor will be updated after checking git diff)
 >> git config --list to check the configuration settings.
 
