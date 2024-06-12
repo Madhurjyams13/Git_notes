@@ -1,7 +1,7 @@
 madhurjyams13
 Myn********l@5
 
->>>>>>>>>>>>>> Git installation and Initial Setup 
+>>>>>>>>>>>>>> Git installation and Initial Setup >>>>>>>>>>>>>>>>>>
 >> Download Git from Website (Already available in this PC)
 >> Install by double Clicking -
 	>> Next - Next - Select On the Desktop - Next - Next - Next - Selrct Override Default branch name for new repos
