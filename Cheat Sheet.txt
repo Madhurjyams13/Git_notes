@@ -1,0 +1,69 @@
+madhurjyams13
+Myn********l@5
+
+>>>>>>>>>>>>>> Git installation and Initial Setup 
+>> Download Git from Website (Already available in this PC)
+>> Install by double Clicking -
+	>> Next - Next - Select On the Desktop - Next - Next - Next - Selrct Override Default branch name for new repos
+	- Use Git and Optional Unix Tools - Next - Next .... all the way to install.
+>> to verify - in the Desktop git bash -> type git --version
+>> git config --global user.name "your user name goes here"
+>> git config --global user.emil "your email id goes here"
+>> git config --global core.autocrlf <auto for windows and input for macos>
+>> git config (for default editor will be updated after checking git diff)
+>> git config --list to check the configuration settings.
+
+
+>>>>>>>>>>>> Creating Repo in Github and cloning the repo
+>> Create a repo in github.com 
+	>> make it public 
+	>> include README.md file
+	>> create repo will update initial commit.
+>> git clone <link to your repo> -- this will clone all the files of the repo to the pwd. 
+	Also this will add the link as remote (git remote add origin is not needed after cloning) 
+>> make changes to already exisiting files == Modified
+>> add new files to the Project == Untracked 
+>> git add <filename> to add the changes and new files to staging area. (Ready to be committed)
+>> git add . to add all the changes to staging area. 
+>> git restore --staged <file>..." to revert the file from staging area to working tree.
+>> git rm --cached (-r for recursively entire directory) <file_name> to remove the file from staging area
+>> Notes regarding git reset, git restore --staged , git rm --cached
+	git rm --cached file: removes the copy of the file from the index / staging-area, 
+	without touching the working tree copy. The proposed next commit now lacks the file. 
+	If the current commit has the file, and you do in fact make a next commit at this point, 
+	the difference between the previous commit and the new commit is that the file is gone.
+
+	git restore --staged file: Git copies the file from the HEAD commit into the index, 
+	without touching the working tree copy. The index copy and the HEAD copy now match, 
+	whether or not they matched before. 
+	A new commit made now will have the same copy of the file as the current commit.
+	If the current commit lacks the file, this has the effect of removing the file from the index. 
+	So in this case it does the same thing as git rm --cached.
+
+	git reset file: this copies the HEAD version of the file to the index, 
+	just like git restore --staged file.
+
+	(Note that git restore, unlike this particular form of git reset, 
+	can overwrite the working tree copy of some file, 
+	if you ask it to do so. The --staged option, without the --worktree option, 
+	directs it to write only to the index.)
+	
+>> git restore <file> would discard all changes that are not staged yet from the working tree
+>> git ls-files to check the files in the staging area. Modified or not
+>> git diff to see the difference between Working tree and staging area
+>> git diff --staged to see the difference between last commit and staging area
+>> git rm (-f might be needed) to remove files from both working tree and staging area.
+>> git commit -m "The Commit Message Goes Here" - This message will keep track of the changes made in this commit.
+>> git push origin main - to add the changes to github repository along with the commit history
+
+>> Starting a Local Project and push it to Github
+	>> Create Folder add necessary Files
+	>> add README.md file
+	>> git init to make it a git Repo
+	>> Create a repo in github with same folder name
+	>> git add and commit in local Repo -- (Steps are same as above)
+	>> git remote add origin <link to your newly created repo of the same name>
+	>> git remote -v to verify the link of the origin
+	>> git branch to check the branch - the standard is main - to rename - git branch -M <name of the branch- default main>
+	>> git push remote origin - to push the changes and initial commit to github repo.
+	
