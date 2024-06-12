@@ -1,0 +1,41 @@
+#######customer######
+customer_id 
+name - 
+mobile - 10 digit number index
+created_on timestamp
+status dafault - Y
+
+
+####### order_hdr
+order_hdr_id
+cutomer_id
+ordered_on
+approved_on
+order_total
+paid_on
+status - default Y
+-------tax_columns------ if the taxes are bill wise
+
+
+####### order_dtl
+order_dtl_id
+order_hdr_id
+dish_mst_id 
+quantity
+dish_total
+-------tax_columns------ if the taxes are item wise
+
+
+####### dish_mst
+dish_mst_id
+dish_code
+dish_name 
+price
+dish_desc
+dish_image
+status
+created_on
+dish_discount
+modified_on
+veg_status V,N
+
