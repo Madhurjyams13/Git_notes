@@ -9,7 +9,7 @@ Myn********l@5
 >> to verify - in the Desktop git bash -> type git --version
 >> git config --global user.name "your user name goes here"
 >> git config --global user.emil "your email id goes here"
->> git config --global core.autocrlf <auto for windows and input for macos>
+>> git config --global core.autocrlf <auto for windows and input for macos> <sometimes true or false> 
 >> git config (for default editor will be updated after checking git diff)
 >> git config --list to check the configuration settings.
 
@@ -65,5 +65,5 @@ Myn********l@5
 	>> git remote add origin <link to your newly created repo of the same name>
 	>> git remote -v to verify the link of the origin
 	>> git branch to check the branch - the standard is main - to rename - git branch -M <name of the branch- default main>
-	>> git push remote origin - to push the changes and initial commit to github repo.
+	>> git push -u remote origin - to push the changes and initial commit to github repo. 
 	
