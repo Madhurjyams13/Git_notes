@@ -78,4 +78,4 @@ Myn********l@5
 
 >> Git Fetch -- Fetches all the changes from remote repo and keeps it updated to locally located remote-tracking branch
 >> Git merge -- Merges the changes to working directory
->> Git pull does the above steps in one command
+>> Git pull does the above steps in one command (Won't remove new files in the local directory)
