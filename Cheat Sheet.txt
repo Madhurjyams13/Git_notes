@@ -71,3 +71,10 @@ Myn********l@5
 	>> git branch to check the branch - the standard is main - to rename - git branch -M <name of the branch- default main>
 	>> git push -u remote origin - to push the changes and initial commit to github repo. 
 	
+
+
+
+
+>> Git Fetch -- Fetches all the changes from remote repo and keeps it updated to locally located remote-tracking branch
+>> Git merge -- Merges the changes to working directory
+>> Git pull does the above steps in one command
