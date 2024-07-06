@@ -1,4 +1,16 @@
+### res_master
+res_id
+res_name
+res_phone
+res-address
+res_mail
+created_on
+modified_on
+status
+
+
 #######customer######
+res_id
 customer_id 
 name - 
 mobile - 10 digit number index
@@ -8,13 +20,16 @@ status dafault - Y
 
 ####### order_hdr
 order_hdr_id
+res_id
 cutomer_id
 ordered_on
 approved_on
-order_total
+dish_total
+disc_total
+net_total
 paid_on
 status - default Y
--------tax_columns------ if the taxes are bill wise
+-------tax_columns------ 
 
 
 ####### order_dtl
@@ -23,11 +38,14 @@ order_hdr_id
 dish_mst_id 
 quantity
 dish_total
--------tax_columns------ if the taxes are item wise
+dish_disc
+dish_net
+
 
 
 ####### dish_mst
 dish_mst_id
+res_id
 dish_code
 dish_name 
 price
