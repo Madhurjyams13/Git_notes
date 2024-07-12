@@ -1,0 +1,137 @@
+============= VPN User Credentials ==============
+
+User Id : Madhurjya
+Password: !W@d_1104#24
+Default Gateway: 103.158.204.4
+Private IPs : as mentioned in trail mail
+Port: 10443
+Connection Name: IFMIS
+
+=========================================
+
+
+FinAssam DB Credentials =================
+192.168.32.200:17706
+doat_user
+tqt8@4a2#n<9TTt
+
+
+=========================================
+
+
+Connection Name: IFMIS
+Default Gateway: 103.158.204.4
+Port: 10443
+User Id : DOAT_User
+Password: d0@!_23
+
+=========================================
+------------demofin connection
+VPN
+User Id : FINASSAM4 
+Password: $dc%ssAM&123
+
+
+Private IP : 192.168.11.108 Public IP :103.158.205.50
+db user = technical_user / UFu15Hgs*&21
+
+=========================================
+							
+							(X) Web Server 	192.168.31.42	cloud2-user / T2M!cROW$f!N			
+																											
+				FinAssam Servers												Emas - PKI DSC servers at SDC			
+									
+				Application Server - 
+(A) FinAssam		192.168.31.40	cloud2-user / T2M!cROW$f!N							DSC App Server	
+(B) EPR 	    	192.168.31.41	cloud2-user / T2M!cROW$f!N				(M) App1	192.168.11.158	finassam / fin123
+(C) CAS	    		192.168.11.106	cloud2-user / T2M!cROW$f!N				(N) App2	192.168.11.159	finassam / fin123
+(D) DSC/eSign		192.168.11.107	cloud2-user / T2M!cROW$f!N				(O) App3	192.168.11.160	finassam / fin123	
+(E) CTMIS Reports	192.168.31.51	cloud2-user / T2M!cROW$f!N					
+									
+				Common SFTP Server	
+(F) SFTP  (7764)	192.168.11.152	cloud2-user / T2M!cROW$f!N					
+						
+				IM Server	
+(G) IM Server		192.168.11.153	cloud2-user / T2M!cROW$f!N			
+							
+									
+				FinAssam DB LB	
+(H) FinAssam_LB1	192.168.32.40	cloud2-user / T2M!cROW$f!N
+(I) FinAssam_LB2	192.168.32.45	cloud2-user / T2M!cROW$f!N					
+														
+
+				FinAssam DB															DSC dB Server	
+(J) Fin DB_Node1	192.168.32.41	cloud2-user / T2M!cROW$f!N				(P) DB1	192.168.11.161	finassam / fin123				
+(K) Fin DB_Node2	192.168.32.42	cloud2-user / T2M!cROW$f!N				(Q) DB2	192.168.11.162	finassam / fin123	
+(L) Fin DB_Node3	192.168.32.43	cloud2-user / T2M!cROW$f!N				(R) DB3	192.168.11.163	finassam / fin123	
+									
+									
+				(S) Test Server Public IP 103.158.204.65	192.168.137.29	fin-user / Wn!S(dc%)4569)			
+									
+									
+===========================================
+
+Tableau Credentials: http://103.158.204.93/ 
+
+admin
+Adm!n@490#$
+
+
+
+
+Zabbix Login credentials for Server Monitoring.
+
+URL: https://mum-zabbix.postiefstechnologies.com/
+
+
+.htpassword:
+
+============
+
+Username: web-monitoring
+
+Password: $6f&l='I6B^b2-M
+
+Login Password:
+
+===============
+
+Username: finassamadmin
+
+Password: sK9@tS8%zY2}mG3$lW
+
+ 
+====================================== Gray Log ==================
+
+
+URL: http://192.168.142.19/
+Username : finassamrouser
+Password : ZpgFJ63EpVdu$8N
+
+
+
+
+
+
+------------------- COOOOOOOOMMMMMMMMMMMMAAAAAAAAAAANNNNNNNNNNNNDDDDDDDDDDDDDDSSSSSSSSSSSSSSSS ----------------------
+#### Slow Log Queries - in DB Nodes
+/var/lib/mysql/mariadb-slow.log
+
+
+#### Server Restarted Count
+cd /var/log
+sudo grep "Tomcat started" messages*
+
+
+#### Monitor the apache log 
+sudo tail -f /afegu/apache-tomcat-9.0.24/logs/catalina.out
+
+### Maridb 45 slave status check 
+sudo mysql => this logs into mysql user
+show slave status;
+-- Check for Slave_IO_Running: Yes
+-- Check for Slave_SQL_Running: Yes
+
+
+
+
