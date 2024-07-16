@@ -89,3 +89,34 @@ Myn********l@5
 
 
 -------- bcdedit /set hypervisorlaunchtype auto (Docker)
+REPOSITORY               TAG                         IMAGE ID       CREATED       SIZE
+mariadb                  10                          fccf0a9f80df   5 weeks ago   404MB
+adoptopenjdk/openjdk11   jdk-11.0.11_9-alpine-slim   019bfca90bcf   2 years ago   260MB
+
+
+version: '3'
+services:
+    mariadb:
+        image: mariadb:10
+        container_name: mariadb
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - 3307:3306
+        environment:
+            - MARIADB_ROOT_USERNAME=root
+            - MARIADB_ROOT_PASSWORD=root123
+        volumes:
+            - db-data:/var/lib/mysql
+volumes:
+    db-data:
+        driver: local
+		
+		
+
+
+FROM adoptopenjdk/openjdk11:jdk-11.0.11_9-alpine-slim
+WORKDIR /opt
+ENV PORT 8081
+EXPOSE 8081
+COPY target/*.jar  /opt/my-app.jar
+ENTRYPOINT exec java $JAVA_OPTS -jar my-app.jar
