@@ -1,12 +1,32 @@
-### res_master
+MySql DataBase Details:
+
+
+username - root
+passowrd - Root@5
+
+username - otc
+password - Petla@1234#otc
+
+create user 'otc'@'%' identified by 'Petla@1234#otc';
+grant all on otc.* to 'otc'@'%';
+flush privileges;
+ ________________________________________________
+
+### res_mst
 res_id
-res_name
-res_phone
-res-address
-res_mail
+name
+category // Indian Chinese comma separated only
+description 
+phone 
+address 
+email 
 created_on
 modified_on
 status
+logo
+veg_status 
+alc_status
+
 
 
 #######customer######
@@ -18,18 +38,21 @@ created_on timestamp
 status dafault - Y
 
 
+
 ####### order_hdr
 order_hdr_id
 res_id
 cutomer_id
 ordered_on
 approved_on
-dish_total
-disc_total
-net_total
+order_gross
+order_disc
+order_net
 paid_on
 status - default Y
 -------tax_columns------ 
+
+
 
 
 ####### order_dtl
@@ -37,9 +60,10 @@ order_dtl_id
 order_hdr_id
 dish_mst_id 
 quantity
-dish_total
+dish_gross
 dish_disc
 dish_net
+
 
 
 
@@ -53,7 +77,59 @@ dish_desc
 dish_image
 status
 created_on
-dish_discount
 modified_on
 veg_status V,N
+
+
+
+####### res_login
+
+id,
+res_id,
+user_id,
+password
+
+
+#######################
+
+----chat gpt-----
+
+import jpos.*;
+
+public class ReceiptPrinterService {
+
+    private POSPrinter printer;
+
+    public ReceiptPrinterService() {
+        // Initialize printer
+        try {
+            printer = new POSPrinter();
+            printer.open("Printer");
+            printer.claim(1000);  // Timeout in milliseconds
+            printer.setDeviceEnabled(true);
+        } catch (JposException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void printReceipt(String receiptText) {
+        try {
+            printer.printNormal(POSPrinterConst.PTR_S_RECEIPT, receiptText);
+            printer.cutPaper(100);  // Cut paper
+        } catch (JposException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void closePrinter() {
+        try {
+            printer.setDeviceEnabled(false);
+            printer.release();
+            printer.close();
+        } catch (JposException e) {
+            e.printStackTrace();
+        }
+    }
+}
+----------////---------------
 
