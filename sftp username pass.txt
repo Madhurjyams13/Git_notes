@@ -1,0 +1,305 @@
+========================== SDC Credentials ==============
+
+Connection Name: IFMIS
+Default Gateway: 103.158.204.4
+Port: 10443
+User Id : DOAT_User
+Password: B@r$DC#561
+
+=========================================================
+
+FinAssam DB Credentials =================
+192.168.32.200:17706
+192.168.32.45:3306
+doat_user
+tqt8@4a2#n<9TTt
+
+
+Username :  ctmis_vuser
+Password :  6VdQws#L7@Bqnk5
+
+
+
+192.168.31.65 (test server)
+
+Username: finance_dept
+Password: dY#56@OpBs67
+
+
+=========================================================
+
+================== API Gateway at SDC 
+
+ssh:
+aedc_aspire
+Aspire@321sdc
+
+jenkins
+http://192.168.31.78:8080
+admin admin
+
+
+==========================================================
+
+Finance IF Database Access 
+
+VPN : 
+UserID :Finance_IF
+Password :Fi##n337&!!
+Private IP of the server :192.168.32.45
+Gateway (Public IP) :  103.158.204.4
+Connection Name : Finance
+Custom Port : 10443
+
+
+Database:
+192.168.32.45:3306
+Support_FD
+t03H-P7>T7T)
+
+
+=======================  CTMIS Server Credentials =============
+
+10.69.9.151:22 ------    root  G$tn&n$dl@789# |||||||||||||||||||||||||||||||||||||||||||||||  doat proapp@ctmis@789#
+
+10.80.1.202:22 ------    doat  Do@tc@llog@ctmis@890# ||||||||||||||||||||||||||||||||||||||   root C!t!m!$@c@llog@789#
+
+10.69.9.154:7422 --------   doat Dbt@890#   ||||||||||||||||||||||||||||||||||||||||||||||||  root  Dbt@assam@890#
+
+10.69.9.155:7896 --------   doat Doat#Rsftp@890# ||||||||||||||     root   Rbi@sftp@789#
+
+10.80.1.103:22  ---------   dipankar Inter@Dip#890#  |||||||||||    root        Sftp@890#
+
+10.69.9.47  ---------- root    redhat
+
+-------------10.69.9.11 3306    root    HFdtfsd@vQW12#  |||||||||||||||| FinAssam maria db UAT
+
+ip 153 port 22 dipankar/Uat@sftp@890#   
+
+
+ssh -v -p 7896 doat@10.69.9.155
+
+=================================================================
+   
+
+============ Find Files with Searched Content =================   
+echo `grep -r -H 2020522700990084 . | grep 25546 | cut -d'.' -f2 | grep -v '/PPAN20210127T133006'; echo -n 'CSRF- 25546 PPAN- 2020522700990084'` >> npslog27012021.log;
+
+
+CTMIS VPN Config SOPHOS -------
+
+For Download -
+https://103.8.248.142/
+
+madhurjya
+
+Madhurjya@123#
+
+Same username password for connection 
+
+CTMIS Url
+
+http://10.80.1.97:7004/ctmis/Login/Login.jsp
+
+
+
+=========================================
+
+							
+							(X) Web Server 	192.168.31.42	cloud2-user / T2M!cROW$f!N			
+																											
+				FinAssam Servers												Emas - PKI DSC servers at SDC			
+									
+				Application Server - 
+(A) FinAssam		192.168.31.40	cloud2-user / T2M!cROW$f!N							DSC App Server	
+(B) EPR 	    	192.168.31.41	cloud2-user / T2M!cROW$f!N				(M) App1	192.168.11.158	finassam / fin123
+(C) CAS	    		192.168.11.106	cloud2-user / T2M!cROW$f!N				(N) App2	192.168.11.159	finassam / fin123
+(D) DSC/eSign		192.168.11.107	cloud2-user / T2M!cROW$f!N				(O) App3	192.168.11.160	finassam / fin123	
+(E) CTMIS Reports	192.168.31.51	cloud2-user / T2M!cROW$f!N					
+									
+				Common SFTP Server	
+(F) SFTP  (7764)	192.168.11.152	cloud2-user / T2M!cROW$f!N					
+						
+				IM Server	
+(G) IM Server		192.168.11.153	cloud2-user / T2M!cROW$f!N			
+							
+									
+				FinAssam DB LB	
+(H) FinAssam_LB1	192.168.32.40	cloud2-user / T2M!cROW$f!N
+(I) FinAssam_LB2	192.168.32.45	cloud2-user / T2M!cROW$f!N					
+														
+
+				FinAssam DB															DSC dB Server	
+(J) Fin DB_Node1	192.168.32.41	cloud2-user / T2M!cROW$f!N				(P) DB1	192.168.11.161	finassam / fin123				
+(K) Fin DB_Node2	192.168.32.42	cloud2-user / T2M!cROW$f!N				(Q) DB2	192.168.11.162	finassam / fin123	
+(L) Fin DB_Node3	192.168.32.43	cloud2-user / T2M!cROW$f!N				(R) DB3	192.168.11.163	finassam / fin123	
+									
+									
+				(S) Test Server Public IP 103.158.204.65	192.168.137.29	fin-user / Wn!S(dc%)4569)			
+									
+
+
+================= DEEPSEEK ================
+									
+lo.ura.i.no.ce.nci.o01@gmail.com
+
+testdeepseek
+
+
+
+
+
+====================== REPORT GENERATION =================
+
+Login to Jasper report	
+https://finanalytics.assam.gov.in/jasperserver/login.html	
+admin1	
+Pa55W06djAspr#
+
+
+Login to superset	
+https://finanalytics.assam.gov.in/	
+admin	
+Pa55!w06dF
+
+
+
+eprocurementassam@gmail.com 
+6001354472
+
+
+====================== Mariadb Localhost =================
+username: root
+password: Root@123
+
+
+username: sbd
+password: Sbd@123
+
+create user 'sbd'@'%' identified by 'Sbd@123';
+grant all privileges on sbd.* to 'sbd'@'%';
+
+
+username: spp
+password: Spp@123
+
+create user 'spp'@'%' identified by 'Spp@123';
+grant all privileges on spp.* to 'spp'@'%';
+
+
+username: revenue
+password: Revenue@123
+
+create user 'revenue'@'%' identified by 'Revenue@123';
+grant all privileges on revenue_minutes.* to 'revenue'@'%';
+=========================================
+								
+								
+								
+								
+====================== SPPP PostGres Credentials =================	
+
+
+Hostname/Address: 103.158.204.88
+192.168.31.65
+
+Port: 5432
+
+Username: finpostadmin
+
+Password: Gj6lR@jo*F66#
+
+===================================================	
+
+
+
+====================== SPPP Prod Database Credentials =================	
+
+
+Hostname/Address:
+192.168.32.48:3306
+
+Database User (3306)
+findbadmin
+Dl[4509m}66H
+
+
+SSH User (22)
+finops_user
+pRU*D56Ef3u
+
+
+=========================================================
+
+
+====================== SPPP Application Server Credentials =================	
+
+VM Name - SPP
+IP Address - 192.168.32.57
+Type - SPP
+Core - 4
+Memory - 64
+OS Disk Size - 50
+Data Disk Size - 200
+OS Rocky - 9.3
+UID - sdc_aedc
+PASS - Aspire@321sdc
+
+
+=========================================================
+
+
+====================== SPPP CI-CD Server Credentials =================
+
+
+VM Name - SPPP-CICD
+IP Address - 192.168.32.59
+UID - doat_user
+PASS - D0@tRs6#bnP
+
+GitLab Root Password - FmisLabTig@2025#
+
+
+
+
+=========================================================
+
+
+
+====================== Revenue Monitoring Server =================
+
+
+VM Name - SPP
+IP Address - 192.168.32.60
+UID - doat_user
+PASS - D0@tRs6#bnP
+
+
+DB Username - root 
+Password - Ty7uXI#Bdp@dm
+
+
+=========================================================
+
+
+
+====================== Kritagyata SFTP (Kar Bhawan Data Center ) =======
+
+
+10.69.9.37:7764
+
+Ag@sftp@789#
+root
+
+
+java path - /sftp/java17/jdk-17.0.12/bin
+
+script file - /root/retiree.sh
+
+log file location - /sftp/java17/jdk-17.0.12/bin/retiree.log 
+
+sftp path - /sftp/data/sftpuser/Kritagyata/RETIREE_DATA
+
+0 9 28-31 * * [ "$(date +\%d -d tomorrow)" == "01" ] && /path/to/<filename>.sh
+
+=========================================================

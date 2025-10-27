@@ -1,0 +1,82 @@
+== After Login ==
+sudo -i 
+(Enter Password)
+
+== Check Linux Verion ==
+cat /etc/os-release
+ 
+== Check Linux Verion ==
+hostnamectl
+
+
+#### Rocky Linux ####
+ 
+=========== Docker Configuration ============
+
+sudo dnf update -y
+sudo dnf install -y dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+== Verification ==
+
+sudo systemctl status docker
+
+docker info
+
+=========== GitLab Configuration ==============
+
+== configuration of GitLab Directory for Docker Volumes
+export GITLAB_HOME=/srv/gitlab 
+## The command needs to be re entered if the SSH Session is expired)
+mkdir -p $GITLAB_HOME/{config,logs,data}
+chown -R 1000:1000 $GITLAB_HOME
+
+
+== Docker-Compose file == 
+cd $GITLAB_HOME
+
+vi docker-compose.yml
+# Paste the Following
+
+# docker-compose.yml starts here
+version: '3.7'
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    container_name: gitlab
+    restart: always
+    hostname: "192.168.32.59"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://192.168.32.59'
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2222:22"
+    shm_size: '256m'
+    volumes:
+      - /srv/gitlab/config:/etc/gitlab
+      - /srv/gitlab/logs:/var/log/gitlab
+      - /srv/gitlab/data:/var/opt/gitlab
+
+# docker-compose.yml ends here
+
+# Port 2222 is used insted of 22
+
+
+sudo docker compose up -d
+
+==== GitLab Setup Ends Here ====
+
+
+== Credentials Configureation ==
+docker exec -it gitlab /bin/bash (To get into the bash)
+
+
+
